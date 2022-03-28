@@ -39,7 +39,7 @@ namespace ACS1on1VideoCallingAppUWP
             callAgent.OnCallsUpdated += Agent_OnCallsUpdated;
             callAgent.OnIncomingCall += Agent_OnIncomingCall;
             Debug.WriteLine("call agent initialization completed");
-            /*
+            
             //call automation start
             
             Debug.Assert(deviceManager.Microphones.Count > 0);
@@ -69,7 +69,7 @@ namespace ACS1on1VideoCallingAppUWP
             GroupCallLocator groupmeetinglocator = new GroupCallLocator(new Guid("d031d534-a539-4c55-8f85-c00f5b9403e6"));
             call = await callAgent.JoinAsync(groupmeetinglocator, joinCallOptions);
             //call automation end
-            */
+            
         }
 
         private async void CallButton_ClickAsync(object sender, RoutedEventArgs e)
